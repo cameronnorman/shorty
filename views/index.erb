@@ -1,0 +1,17 @@
+<div class="columns">
+  <div class="column has-text-centered">
+    <form action="/save">
+      <div class="field">
+        <label>URL goes here:</label>
+        <div class="control mt-2">
+          <input name="url" class="input" type="text" placeholder="Enter the URL you wish to shorten here..."/>
+        </div>
+      </div>
+      <input type="submit" class="button" value="Make shorter!" />
+    </form>
+    <% if @short_id %>
+      <p class="mt-5">Shortened link: <a href="/<%= @short_id %>" target="_blank"><%= @short_id %></a></p>
+      <p class="mt-5">Shortened URL: <%= @short_id %></p>
+    <% end %>
+  </div>
+</div>
