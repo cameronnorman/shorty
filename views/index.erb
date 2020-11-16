@@ -10,8 +10,8 @@
       <input type="submit" class="button" value="Make shorter!" />
     </form>
     <% if @short_id %>
-      <p class="mt-5">Shortened link: <a href="/<%= @short_id %>" target="_blank"><%= @short_id %></a></p>
-      <p class="mt-5">Shortened URL: <%= @short_id %></p>
+      <p class="mt-5">Shortened link: <a href="/<%= @short_id %>" target="_blank"><%= @site_url %>/<%= @short_id %></a></p>
+      <p class="mt-5">Shortened URL: <%= @site_url %>/<%= @short_id %></p>
     <% end %>
   </div>
 </div>

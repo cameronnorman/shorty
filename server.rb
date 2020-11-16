@@ -8,6 +8,7 @@ disable :strict_paths
 urls = {}
 
 before do
+  @site_url = ENV['SITE_URL'] || "http://localhost:3000"
 end
 
 get '/' do
